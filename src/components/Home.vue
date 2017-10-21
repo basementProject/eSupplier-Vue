@@ -8,8 +8,8 @@
         <v-btn large router to="/products" class="secondary">My Products</v-btn>
       </v-flex>
     </v-layout>
-    <v-layout row wrap >
-      <v-flex xs12 md10 offset-md1>> 
+    <v-layout row wrap>
+      <v-flex xs12 md10 offset-md1>
         <v-carousel>
           <v-carousel-item
             v-for="product in products"
@@ -36,7 +36,7 @@
       return {
         products: [
           { imageUrl: 'https://c1.staticflickr.com/4/3926/14931675222_8b8705cf54_b.jpg', id: '12312231', title: 'Beers' },
-          { imageUrl: 'https://cdn.pixabay.com/photo/2017/05/23/20/14/cheese-2338430_960_720.jpg', id: '21241555', title: 'Cheese' }
+          { imageUrl: 'http://www.eatwisconsincheese.com/EatWisconsinCheese/media/content/hero%20images/hero-cheese.png', id: '21241555', title: 'Cheese' }
         ]
       }
     }
