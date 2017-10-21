@@ -15,8 +15,8 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar dark class="red darken-3">
-      <v-toolbar-side-icon @click="sideNav = !sideNav" class="hidden-sm-and-up">
+    <v-toolbar dark class="primary">
+      <v-toolbar-side-icon @click.stop="sideNav = !sideNav" class="hidden-sm-and-up">
       </v-toolbar-side-icon>
       <v-toolbar-title>
         <router-link to="/" tag="span" style="cursor: pointer">e-Supplier</router-link>
@@ -27,7 +27,6 @@
           flat 
           v-for="item in menuItems" 
           :key="item.title" 
-          router
           :to="item.link">
           <v-icon left>{{ item.icon }}</v-icon>
           {{ item.title }}
@@ -58,7 +57,7 @@ export default {
       {
         icon: 'fa-shopping-cart',
         title: 'Orders',
-        link: '/'
+        link: '/orders/suppliers'
       },
       {
         icon: 'fa-clock-o',

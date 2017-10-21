@@ -6,6 +6,7 @@ import Clients from '@/components/Supplier/Clients'
 import Profile from '@/components/User/Profile'
 import Signin from '@/components/User/Signin'
 import Signup from '@/components/User/Signup'
+import SupplierOrders from '@/components/Orders/SupplierOrders'
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/orders/suppliers',
+      name: 'SupplierOrders',
+      component: SupplierOrders
     },
     {
       path: '/client/add',
