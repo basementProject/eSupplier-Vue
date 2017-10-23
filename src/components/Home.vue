@@ -28,7 +28,7 @@
       </v-flex>
     </v-layout>
   </v-container>
-</template>
+</template> 
 
 <script>
   export default {
